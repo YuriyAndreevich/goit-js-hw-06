@@ -11,9 +11,10 @@ function handleSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert(`Заполни форму!`);
   }
-  const user = {};
-  user.email = email.value;
-  user.password = password.value;
-  console.log(`email: ${email.value}, password: ${password.value}`);
+  const user = {
+    email: email.value,
+    password: password.value,
+  };
+  console.log(user);
   event.currentTarget.reset();
 }
